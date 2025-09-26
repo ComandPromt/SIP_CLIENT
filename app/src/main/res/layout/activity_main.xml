@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etProfileUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario SIP (Ej. 101)"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etProfileDomain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Servidor SIP (Ej. sip.ejemplo.com)"
+        android:inputType="textUri"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etProfilePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña SIP"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/etSipUri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej. sip:usuario@dominio.com"
+        android:inputType="textUri"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado: Desconectado"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Llamar"/>
+
+    <Button
+        android:id="@+id/btnHangup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Colgar"
+        android:enabled="false"/>
+
+</LinearLayout>
